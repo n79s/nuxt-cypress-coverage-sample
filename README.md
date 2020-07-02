@@ -96,3 +96,15 @@ module.exports = (on, config) => {
   return config
 }
 ```
+
+* ./jsconfig.json
+
+optional.
+
+https://docs.cypress.io/guides/tooling/IDE-integration.html#Reference-type-declarations-via-jsconfig
+
+```
+{
+  "include": ["./node_modules/cypress", "cypress/**/*.js"]
+}
+```
