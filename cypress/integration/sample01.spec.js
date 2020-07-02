@@ -1,0 +1,20 @@
+describe('Counter Test', () => {
+  it('ClickCounter', () => {
+    cy.visit('http://localhost:3000')
+    cy.get('.button--green').click()
+    cy.url().should('include', '/sample01')
+    // cy.visit('http://localhost:3000/sample01')
+    cy.get('[data-counter-input-value]').should('have.value', 0)
+    cy.get('[data-counter-count-button]').click()
+    cy.get('[data-counter-input-value]').should('have.value', 1)
+    cy.get('[data-counter-message]').should('include.text', 'small')
+
+    cy.get('[data-counter-count-button]').click()
+    cy.get('[data-counter-count-button]').click()
+    cy.get('[data-counter-count-button]').click()
+    cy.get('[data-counter-count-button]').click()
+    cy.get('[data-counter-message]').should('include.text', 'small')
+    cy.get('[data-counter-count-button]').click()
+    cy.get('[data-counter-message]').should('include.text', 'large')
+  })
+})

@@ -1,0 +1,40 @@
+{
+  "name": "nuxt-cypress-coverage-sample",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "export": "nuxt export",
+    "serve": "nuxt serve",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.11.0",
+    "element-ui": "^2.13.2",
+    "nuxt": "^2.13.0"
+  },
+  "devDependencies": {
+    "@cypress/code-coverage": "^3.8.1",
+    "@nuxtjs/eslint-config": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@vue/test-utils": "^1.0.3",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.0.1",
+    "babel-plugin-istanbul": "^6.0.0",
+    "cypress": "^4.9.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "istanbul-lib-coverage": "^3.0.0",
+    "jest": "^26.0.1",
+    "nyc": "^15.1.0",
+    "prettier": "^2.0.5",
+    "vue-jest": "^3.0.4"
+  }
+}
